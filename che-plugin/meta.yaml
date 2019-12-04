@@ -1,0 +1,19 @@
+apiVersion: v2
+publisher: monaparty
+name: vscode-ivy-smart-contract
+version: 0.0.1
+type: VS Code extension
+displayName: Ivy Smart-contract Language Support
+title: Ivy Smart-contract Language Support
+description: Ivy Smart-contract Language Smart Contract Snippets.
+#icon: https://commons.wikimedia.org/wiki/File:Libra_logo_icon.svg
+firstPublicationDate: "2019-12-04"
+category: Language
+repository: https://github.com/monaparty/vscode-ivy-smartcontract/
+spec:
+  containers:
+    - image: "docker.io/eclipse/che-remote-plugin-runner-java8:7.0.0-next"
+      name: vscode-ivy-smart-contract
+      memoryLimit: "512Mi"
+  extensions:
+    - https://github.com/monaparty/vscode-ivy-smartcontract/releases/download/v0.0.1/ivy-0.0.1.vsix
